@@ -1,0 +1,72 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1b1d21;
+    
+}
+
+.crad .heading h6{
+    color: #0257cf;
+}
+.crad .heading h1{
+    color: #ffffff;
+    font-size: calc(1.375rem + 1.5vw)
+}
+.crad .info .box .inner{
+    position: relative;
+    background-color: #0e1114;
+    border: 1px solid #1b1d21;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.crad .info .box .inner::after{
+	content: '';
+	position: absolute;
+	right:0;
+	top:0;
+	width:0;
+	box-sizing: border-box;
+	height:0;
+	border-top:3px solid transparent;
+	border-right: 3px solid transparent;
+	transition: all .8s ease;
+}
+.crad .info .box .inner::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    box-sizing: border-box;
+    height: 0;
+    border-bottom:3px solid transparent;
+	border-left: 3px solid transparent;
+	transition: all .8s ease;
+}
+.crad .info .box:hover .inner::after,
+.crad .info .box:hover .inner::before{
+    border-color: #007fff;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    
+}
+.crad .info .box .inner .icon{
+    padding: 35px;
+	font-size:50px;
+    background-color: #007fff;
+	color:#ffffff;
+	transition: color .8s ease;
+    border-radius: 50%;
+
+}
+.crad .info .box:hover .inner .icon{
+	color:#ffffff;
+}
